@@ -12,5 +12,5 @@ import java.util.List;
 @Transactional
 public interface UserRepository extends JpaRepository<User,Integer> {
     @Query("select u from User u where u.id =:id")
-    User find(@Param("id")int id);
+    User find(@Param("id")int id) ;
 }
